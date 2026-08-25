@@ -3,7 +3,7 @@
 :root { --blue: #1462f3; --blue-light: #3c7cff; --ink: #050608; --surface: #0b0d11; --muted: #939aa6; --line: rgba(255,255,255,.1); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--ink); color: #fff; font-family: var(--font-geist-sans), Arial, sans-serif; overflow-x: hidden; }
+body { margin: 0; background: var(--ink); color: #fff; font-family: Arial, Helvetica, sans-serif; overflow-x: hidden; }
 body::selection { background: var(--blue); color: #fff; }
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
@@ -56,7 +56,7 @@ h2 { font-size: clamp(42px,5vw,78px); }
 .service-card::before { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 3px; background: var(--blue); transition: width .35s; }
 .service-card:hover { background: linear-gradient(145deg, rgba(20,98,243,.16), rgba(255,255,255,.025)); transform: translateY(-5px); }
 .service-card:hover::before { width: 100%; }
-.service-top { display: flex; justify-content: space-between; color: #69707b; font: 11px var(--font-geist-mono); }
+.service-top { display: flex; justify-content: space-between; color: #69707b; font: 11px ui-monospace, SFMono-Regular, Consolas, monospace; }
 .service-top i { font-style: normal; font-size: 18px; color: var(--blue-light); }
 .service-card h3 { font-size: 25px; margin: 80px 0 16px; letter-spacing: -.03em; }
 .service-card p { color: var(--muted); line-height: 1.65; font-size: 14px; margin: 0; max-width: 310px; }
